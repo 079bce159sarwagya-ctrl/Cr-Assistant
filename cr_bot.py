@@ -24,7 +24,7 @@ TIMEZONE_STR = os.getenv("BOT_TIMEZONE", "Asia/Kathmandu")
 LOCAL_TZ = pytz.timezone(TIMEZONE_STR)
 
 genai.configure(api_key=GEMINI_API_KEY)
-ai_model = genai.GenerativeModel("gemini-3.8-flash")
+ai_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # ==============================================================================
 # 2. LOCAL DATABASE & MEMORY

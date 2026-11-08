@@ -20,7 +20,7 @@ CR_USER_ID = int(os.getenv("CR_TELEGRAM_USER_ID", "0"))
 
 # Specify your local timezone for the 7:00 AM daily notification
 # (e.g., 'Asia/Kolkata', 'Asia/Dhaka', 'UTC', 'America/New_York')
-TIMEZONE_STR = os.getenv("BOT_TIMEZONE", "Asia/Kolkata")
+TIMEZONE_STR = os.getenv("BOT_TIMEZONE", "Asia/Kathmandu")
 LOCAL_TZ = pytz.timezone(TIMEZONE_STR)
 
 genai.configure(api_key=GEMINI_API_KEY)
